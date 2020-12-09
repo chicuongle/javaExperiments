@@ -28,6 +28,7 @@ configure(javaSubProjects()) {
     targetCompatibility = 11
     dependencies {
         api platform(project(':platform'))
+        compileOnly 'org.codehaus.groovy:groovy-all'
         compileOnly 'org.projectlombok:lombok'
         annotationProcessor 'org.projectlombok:lombok:1.18.12'
 
@@ -39,9 +40,13 @@ configure(javaSubProjects()) {
         testImplementation configurations.testFramework
     }
     test {
+        useJUnitPlatform()
         afterTest { desc, result ->
             def executionTime = result.endTime - result.startTime
             println "Executing test ${desc.name} [${desc.className}] with result: ${result.resultType} in ${executionTime} ms"
+        }
+        testLogging {
+            showStandardStreams = true
         }
     }
 }

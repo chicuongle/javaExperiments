@@ -14,6 +14,6 @@ dependencies {
     testFramework 'junit:junit'
     testFramework 'org.junit.vintage:junit-vintage-engine'
     testFramework 'org.dbunit:dbunit'
-	testFramework "org.springframework:spring-test"
-	testFramework "org.spockframework:spock-spring"
+    testFramework 'org.springframework:spring-test'
+    testFramework 'org.spockframework:spock-spring'
 }
