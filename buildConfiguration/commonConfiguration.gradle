@@ -1,0 +1,19 @@
+configurations {
+    testFramework
+}
+
+dependencies {
+    testFramework 'org.hamcrest:hamcrest-all'
+    testFramework 'org.assertj:assertj-core'
+    testFramework 'org.mockito:mockito-core'
+    testFramework 'org.spockframework:spock-core'
+    testFramework 'com.athaydes:spock-reports'
+    testFramework 'org.spockframework:spock-junit4'
+    testFramework 'org.junit.jupiter:junit-jupiter-api'
+    testFramework 'org.junit.jupiter:junit-jupiter-engine'
+    testFramework 'junit:junit'
+    testFramework 'org.junit.vintage:junit-vintage-engine'
+    testFramework 'org.dbunit:dbunit'
+	testFramework "org.springframework:spring-test"
+	testFramework "org.spockframework:spock-spring"
+}
