@@ -1,5 +1,8 @@
-package org.java.feature.inner;
+package org.java.feature.classes;
 
+/**
+ * an example of inner class
+ */
 public class Util {
     private String value;
     private final static Util utilInstance = new Util();

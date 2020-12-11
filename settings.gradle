@@ -13,8 +13,8 @@ rootProject.name = 'javaExperiments'
 include 'platform'
 
 include ':Sort'
-include ':InnerClasses'
+include ':JavaFeatures'
 //include 'Axis2'
 
 project(':Sort').projectDir = "$rootDir/Algorithms/Sort" as File
-project(':InnerClasses').projectDir = "$rootDir/JavaFeatures/InnerClasses" as File
+project(':JavaFeatures').projectDir = "$rootDir/JavaFeatures" as File

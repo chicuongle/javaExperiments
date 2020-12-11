@@ -1,8 +1,8 @@
-package org.java.feature.inner
+package org.java.feature.classes
 
 import spock.lang.Specification
 
-class UtilTest extends Specification {
+class UtilSpec extends Specification {
     def "static inner class used as Factory"(){
         given: "a factory instance of Util"
         def fac = new Util.UtilFactory()
