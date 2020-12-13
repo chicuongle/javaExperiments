@@ -43,7 +43,8 @@ configure(javaSubProjects()) {
         useJUnitPlatform()
         afterTest { desc, result ->
             def executionTime = result.endTime - result.startTime
-            println "Executing test ${desc.name} [${desc.className}] with result: ${result.resultType} in ${executionTime} ms"
+            println "Executing test ${desc.name} [${desc.className}] " +
+            "with result: ${result.resultType} in ${executionTime} ms"
         }
         testLogging {
             showStandardStreams = true
