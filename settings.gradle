@@ -14,7 +14,9 @@ include 'platform'
 
 include ':Sort'
 include ':JavaFeatures'
+include ':Kata'
 //include 'Axis2'
 
 project(':Sort').projectDir = "$rootDir/Algorithms/Sort" as File
 project(':JavaFeatures').projectDir = "$rootDir/JavaFeatures" as File
+project(':Kata').projectDir = "$rootDir/Algorithms/Kata" as File
